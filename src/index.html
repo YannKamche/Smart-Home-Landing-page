@@ -17,6 +17,7 @@ dark:text-neutral-200
 bg-white
 dark:bg-neutral-800
 ">
+    <!-- Navigation bar starts -->
 <nav class="mx-auto p-4 bg-amber-400">
 <div class="
   container
@@ -42,7 +43,7 @@ dark:bg-neutral-800
   ">
     <img src="../assets/logo.svg" width="200" class="w-48 md:w-64 lg:w-72" alt="Home Smart Logo">
   </a>
-  <button id="menu" class="menu-btn z-50">
+  <button id="menu" class="menu-btn z-50 lg:hidden">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
       stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -147,6 +148,51 @@ dark:bg-neutral-800
   </div>
 </div>
 </nav>
+    <!-- Navigation bar ends -->
+
+    <!-- Header starts -->
+<header class="relative pt-16 md:pt-24 lg:pt-48">
+    <div class="
+    bg-gradient-to-b 
+    from-amber-400 
+    to-amber-600
+    absolute
+    inset-0
+    bottom-8
+    md:bottom-24
+    xl:bottom-32
+    -z-10
+    ">
+    </div>
+
+    <div class="
+    container 
+    grid 
+    grid-rows-1  
+    px-2
+    place-items-end
+    ">
+        <img src="../assets/couch.png" alt="" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        ">
+        <img src="../assets/app.svg" alt="" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        w-40
+        sm:w-52
+        md:w-64
+        lg:72
+        ">
+    </div>
+</header>
+    <!-- Header ends -->
 
 <!-- Script file -->
 <script src="./script.js"></script>
