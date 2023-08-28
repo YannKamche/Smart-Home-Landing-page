@@ -13,6 +13,9 @@ module.exports = {
 
     container: {
       center: true,
+    },
+    fontFamily: {
+      body: ['Poppins']
     }
   },
   plugins: [
