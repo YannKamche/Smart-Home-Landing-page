@@ -60,6 +60,7 @@ font-body
 
   <div id="menubar"
   class="
+    font-bold
     hidden
     flex-col
     gap-4
@@ -71,7 +72,7 @@ font-body
     bg-amber-400
     shadow-xl
     text-center
-    text-lg
+    text-2xl
     p-6
     items-center
     lg:flex
@@ -144,9 +145,9 @@ font-body
       ring-offset-4
     ring-offset-amber-400
       scale-100
-      hover:scale-125
+      hover:scale-110
       ease-in
-      duration-200
+      duration-300
       transition-all
     " href="/">
     Sign Up
@@ -231,9 +232,9 @@ ring-offset-white
 dark:ring-amber-400
 dark:ring-offset-neutral-800
 scale-100
-hover:scale-125
-ease-in
+hover:scale-110
 duration-200
+ease-in
 ">
 
 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -246,7 +247,11 @@ duration-200
 </a>
 
 <!-- Card Section -->
-<section class="relative">
+<section class="relative mb-20">
+    <div class="bg-slate-100 absolute inset-0 
+    -z-30 -mx-8 -top-20
+    w-screen h-[60vh] shadow-sm">
+    </div>
     <div class="flex justify-center mb-10 md:mb-12">
         <h2 class="text-4xl text-amber-400 font-bold">Our Qualities</h2>
     </div>
@@ -284,11 +289,17 @@ duration-200
     ">
         <!-- Card 1 -->
         <div class="
+        group
         grid
         gap-4
         text-center
         justify-items-center
         md:flex-1
+        p-4 bg-white dark:bg-neutral-400 shadow-xl 
+        dark:shadow-2xl rounded-md 
+        cursor-pointer scale-100 hover:scale-110 
+        duration-300
+        transition-transform ease-in
         ">
             <div class="
             rounded-full
@@ -297,8 +308,8 @@ duration-200
             p-4
             cursor-pointer
             scale-100
-            hover:scale-110
-            duration-100
+            group-hover:scale-110
+            duration-300
             ease-in
             transition-transform
             "> 
@@ -309,45 +320,61 @@ duration-200
                 </svg>
             </div>
             <h3 class="text-3xl font-bold">Safe</h3>
-            <p>Our products are secure and private out-of-the-box</p>
+            <p class="tracking-wider">Our products are secure and private out-of-the-box</p>
             
         </div>
+
         <!-- Card 2 -->
         <div class="
+        group
         grid
         gap-4
         text-center
         justify-items-center
         md:flex-1
+        p-4 bg-amber-400 dark:bg-neutral-400 
+        shadow-xl dark:shadow-2xl rounded-md 
+        cursor-pointer scale-100 hover:scale-110
+        duration-300 
+        transition-transform 
+        ease-in
         ">
             <div class="
             rounded-full
             border-8
-            border-amber-400
+            border-white
+            group-hover:rotate-90
             p-4
             cursor-pointer
             scale-100
-            hover:scale-110
+            group-hover:scale-110
             duration-100
             ease-in
             transition-transform
+            
             "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
               </svg>
               
             </div>
             <h3 class="text-3xl font-bold">Efficient</h3>
-            <p>Feel good about your wallet and the environment</p>
+            <p class="tracking-wider">Feel good about your wallet and the environment</p>
             
         </div>
 
         <!-- Card 3 -->
         <div class="
+        group
         grid
         gap-4
         text-center
         justify-items-center
         md:flex-1
+        p-4 bg-white dark:bg-neutral-400 shadow-xl 
+        dark:shadow-2xl rounded-md cursor-pointer 
+        scale-100 hover:scale-110 
+        transition-transform ease-in
+        duration-300
         ">
             <div class="
             rounded-full
@@ -356,7 +383,7 @@ duration-200
             p-4
             cursor-pointer
             scale-100
-            hover:scale-110
+            group-hover:scale-110
             duration-100
             ease-in
             transition-transform
@@ -367,45 +394,124 @@ duration-200
               
             </div>
             <h3 class="text-3xl font-bold">Proven</h3>
-            <p>Leading the Smart Home world for 10 years</p>
+            <p class="tracking-wider">Leading the Smart Home world for 10 years</p>
             
         </div>
     </div>
 </section>
 
 <!-- Partner Section -->
-<section class="text-center grid gap-8 place-items-center">
-    <div class="grid gap-4">
-        <h2 class="text-4xl font-bold text-amber-400 mb-5">Our Partners</h2>
-        <p class="w-full max-w-lg">We've partnered with hundreds of smart 
-            hombe brands to help you create a smart home that fits your needs and 
+<section class="text-center grid gap-8 place-items-center 
+bg-gradient-to-b 
+from-amber-400 
+to-amber-600 pt-6 pb-6
+shadow-2xl
+-mx-8">
+    <div class="grid gap-4 w-full">
+        <h2 class="text-4xl font-bold text-white mb-5 ">Our Partners</h2>
+        <p class="w-[70%] mx-auto text-2xl leading-snug tracking-wider font-bold dark:text-black">We've partnered with hundreds of smart 
+            home brands to help you create a smart home that fits your needs and 
             doesn't lock
         </p>
     </div>
     <!-- Logos -->
     <div class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto">
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-2xl rounded-md cursor-pointer scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-2xl rounded-md cursor-pointer scale-100 hover:scale-105 transition-transform ease-in">
             <img src="../assets/partner1.svg" alt="Partner" class="h-16 w-16 ">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md cursor-pointer scale-100 hover:scale-105 transition-transform ease-in">
             <img src="../assets/partner2.svg" alt="Partner" class="h-16 w-16">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in cursor-pointer">
             <img src="../assets/partner3.svg" alt="Partner" class="h-16 w-16">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in cursor-pointer">
             <img src="../assets/partner4.svg" alt="Partner" class="h-16 w-16">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in cursor-pointer">
             <img src="../assets/partner5.svg" alt="Partner" class="h-16 w-16">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in cursor-pointer">
             <img src="../assets/partner6.svg" alt="Partner" class="h-16 w-16">
         </div>
-        <div class="p-4 bg-white dark:bg-neutral-600 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in">
+        <div class="p-4 bg-white dark:bg-neutral-400 shadow-xl dark:shadow-xl rounded-md scale-100 hover:scale-105 transition-transform ease-in cursor-pointer">
             <img src="../assets/partner7.svg" alt="Partner" class="h-16 w-16">
         </div>
     </div>
+</section>
+
+<!-- Home CTA Section -->
+<section class="relative">
+    <div class="bg-slate-100 absolute inset-0 -z-30 -mx-8 top-5">
+    </div>
+    <div class="flex flex-wrap-reverse gap-8 justify-center items-center">
+        <div>
+            <div class="flex flex-wrap flex-col items-start lg:justify-center gap-6">
+                <div class="">
+                    <h2 class="text-4xl font-bold tracking-wider mb-4">Home is where the heart is. Relax!</h2>
+                    <p class="max-w-md leading-snug tracking-wide xl:text-xl">All our supported hardware includes traditional
+                        inputs so you can integrate our products into your house in a way
+                        that's best for everyone
+                    </p>
+                </div>
+                <a href="#" class="
+py-2
+px-6
+bg-amber-400
+dark:text-neutral-900
+flex
+gap-2
+shadow-xl
+hover:shadow-none
+transition-all
+focus:outline-none
+focus-visible:ring-4
+ring-neutral-900
+rounded-md
+ring-offset-4
+ring-offset-white
+dark:ring-amber-400
+dark:ring-offset-neutral-800
+scale-100
+hover:scale-110
+duration-200
+ease-in
+">
+
+    <span class="font-bold text-lg">Get Started</span>
+                </a>
+            </div>
+        </div>
+        <img src="../assets/table.png" alt="Table">
+    </div>
+    <!-- Circle -->
+    <div class="
+    absolute
+    -bottom-6
+    -right-32
+    -z-10
+    aspect-square
+    md:border-8
+    border-amber-400
+    rounded-full
+    md:w-64
+    lg:w-96
+    xl:max-w-lg
+    ">
+    </div>
+
+    <div class="
+    bg-teal-900
+    h-24
+    -mx-8
+    mt-12
+    xl:h-48
+    xl:absolute
+    w-screen
+    -bottom-8
+    -z-10
+    xl:mt-0
+    "></div>
 </section>
 </main>
 <!-- Script file -->
