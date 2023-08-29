@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="
-max-w-[2500px] 
+max-w-[2000px] 
 mx-auto 
 text-neutral-900 
 dark:text-neutral-200
@@ -24,6 +24,7 @@ bg-header
 fixed
 w-full
 z-50
+max-w-[2000px]
 " id="navbar">
 <div class="
   container
@@ -458,14 +459,13 @@ shadow-2xl
 
 <!-- Home CTA Section -->
 <section class="relative">
-    <div class="bg-slate-100 absolute inset-0 -z-30 -mx-8 top-5">
+    <div class="bg-slate-100 absolute inset-0 -z-30 -mx-8 -top-5 lg:-top-10">
     </div>
     <div class="flex flex-wrap-reverse gap-8 justify-center items-center">
-        <div>
             <div class="flex flex-wrap flex-col items-start lg:justify-center gap-6">
                 <div class="">
-                    <h2 class="text-4xl font-bold tracking-wider mb-4">Home is where the heart is. Relax!</h2>
-                    <p class="max-w-md leading-snug tracking-wide xl:text-xl">All our supported hardware includes traditional
+                    <h2 class="text-4xl font-bold tracking-wider mb-4">Home is where the heart is. <br>Relax!</h2>
+                    <p class="max-w-lg leading-snug tracking-wide xl:text-xl">All our supported hardware includes traditional
                         inputs so you can integrate our products into your house in a way
                         that's best for everyone
                     </p>
@@ -497,10 +497,19 @@ ease-in
     <span class="font-bold text-lg">Get Started</span>
                 </a>
             </div>
-        </div>
-        <img src="../assets/table.png" alt="Table">
+            <div class="bg-purple-200 shadow-2xl relative 
+            before:absolute 
+            before:bg-amber-300 
+            before:w-1/2
+            before:h-1/2
+            before:-top-5
+            before:-left-5
+            before:content-['']
+            before:-z-30">
+                <img src="../assets/table.png" alt="Table">
+            </div>
     </div>
-    <!-- Circle -->
+    <!-- Circle bottom-->
     <div class="
     absolute
     -bottom-6
@@ -516,6 +525,24 @@ ease-in
     ">
     </div>
 
+    <!-- Circle top -->
+    <div class="
+    absolute
+    -top-0
+    -left-52
+    lg:-left-72
+    -z-10
+    aspect-square
+    md:border-8
+    border-amber-400
+    rounded-full
+    md:w-64
+    lg:w-96
+    xl:max-w-lg
+    ">
+    </div>
+
+    <!-- Green block -->
     <div class="
     bg-teal-900
     h-24
@@ -527,7 +554,9 @@ ease-in
     -bottom-8
     -z-10
     xl:mt-0
-    "></div>
+    ">
+</div>
+
 </section>
 </main>
 
