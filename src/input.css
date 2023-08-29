@@ -3,16 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.button {
-    @apply  lg:hidden
-    focus:outline-none
+
+.show-scroll {
+    bottom: 2rem;
+    transition: bottom 3s;
+}
+.offset {
+    @apply focus:outline-none
     focus-visible:ring-4
     ring-neutral-900
     rounded-sm
     ring-offset-4
-    ring-offset-amber-400
-    text-neutral-900
-    hover:text-neutral-600
-    transition-colors
-    cursor-pointer;
+    ring-offset-amber-400;
+}
+.bg-header {
+    @apply shadow-2xl;
 }

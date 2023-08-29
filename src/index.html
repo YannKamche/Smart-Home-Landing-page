@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="
-
-max-w-[2000px] 
+max-w-[2500px] 
 mx-auto 
 text-neutral-900 
 dark:text-neutral-200
@@ -20,7 +19,12 @@ dark:bg-neutral-800
 font-body
 ">
     <!-- Navigation bar starts -->
-<nav class="mx-auto p-4 bg-amber-400">
+<nav class="mx-auto p-2 bg-amber-400
+bg-header
+fixed
+w-full
+z-50
+" id="navbar">
 <div class="
   container
   mx-auto
@@ -45,14 +49,18 @@ font-body
   ">
     <img src="../assets/logo.svg" width="200" class="w-48 md:w-64 lg:w-72" alt="Home Smart Logo">
   </a>
-  <button id="menu" class="menu-btn z-50 lg:hidden">
+  <button id="menu" class="
+  menu-btn 
+  z-50 
+  lg:hidden
+  offset">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
       stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
     </svg>      
   </button>
 
-  <button id="xmark" class="xmark-btn hidden z-50">
+  <button id="xmark" class="xmark-btn hidden z-50 offset">
     <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
      </svg>
@@ -68,7 +76,7 @@ font-body
     z-40
     right-0
     left-0
-    top-16
+    top-14
     bg-amber-400
     shadow-xl
     text-center
@@ -158,17 +166,20 @@ font-body
     <!-- Navigation bar ends -->
 
     <!-- Header starts -->
-<header class="relative pt-16 md:pt-24 lg:pt-48">
+<header class="relative pt-28 md:pt-24 lg:pt-48">
     <div class="
     bg-gradient-to-b 
     from-amber-400 
     to-amber-600
     absolute
     inset-0
-    bottom-8
+    bottom-10
     md:bottom-24
     xl:bottom-32
     -z-10
+    top-12
+    md:top-14
+    lg:top-24
     ">
     </div>
 
@@ -209,6 +220,9 @@ md:gap-24
 lg:gap-32
 px-8
 overflow-hidden
+space-y-12
+bg-red
+
 ">
 
 <a href="#" class="
@@ -217,7 +231,7 @@ px-6
 bg-amber-400
 dark:text-neutral-900
 mx-auto
-my-12
+mt-16
 flex
 gap-2
 shadow-xl
@@ -237,22 +251,23 @@ duration-200
 ease-in
 ">
 
-<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
       stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round"
         d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
     </svg>
 
-    <span class="font-bold text-lg">Download the App</span>
+    <span class="font-bold text-2xl">Download the App</span>
+      
 </a>
 
 <!-- Card Section -->
-<section class="relative mb-20">
+<section class="relative">
     <div class="bg-slate-100 absolute inset-0 
-    -z-30 -mx-8 -top-20
-    w-screen h-[60vh] shadow-sm">
+    -z-30 -mx-8
+    w-screen h-full shadow-xl">
     </div>
-    <div class="flex justify-center mb-10 md:mb-12">
+    <div class="flex justify-center mb-8 md:mb-10 mt-2">
         <h2 class="text-4xl text-amber-400 font-bold">Our Qualities</h2>
     </div>
 
@@ -286,6 +301,7 @@ ease-in
     items-start
     justify-center
     md:justify-between
+    mb-10
     ">
         <!-- Card 1 -->
         <div class="
@@ -514,8 +530,15 @@ ease-in
     "></div>
 </section>
 </main>
+
+ <!-- SCROLL TO TOP -->
+ <a href="#" class="fixed bg-slate-200 rounded-3xl shadow-lg p-2 z-20 right-1 lg:right-5 hover:opacity transition-transform
+ duration-100 hover:-translate-y-3 show-scroll animate-bounce" id="scroll-up">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+    </svg>
+ </a>
 <!-- Script file -->
 <script src="./script.js"></script>
 </body>
-<!-- Navbar ends -->
 </html>
