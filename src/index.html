@@ -222,7 +222,6 @@ lg:gap-32
 px-8
 overflow-hidden
 space-y-12
-bg-red
 
 ">
 
@@ -265,8 +264,7 @@ ease-in
 <!-- Card Section -->
 <section class="relative">
     <div class="bg-slate-100 absolute inset-0 
-    -z-30 -mx-8
-    w-screen h-full shadow-xl">
+    -z-30 w-screen shadow-xl -mx-8">
     </div>
     <div class="flex justify-center mb-8 md:mb-10 mt-2">
         <h2 class="text-4xl text-amber-400 font-bold">Our Qualities</h2>
@@ -458,7 +456,7 @@ shadow-2xl
 </section>
 
 <!-- Home CTA Section -->
-<section class="relative">
+<section class="relative pt-8 xl:pb-8">
     <div class="bg-slate-100 absolute inset-0 -z-30 -mx-8 -top-5 lg:-top-10">
     </div>
     <div class="flex flex-wrap-reverse gap-8 justify-center items-center">
@@ -499,13 +497,24 @@ ease-in
             </div>
             <div class="bg-purple-200 shadow-2xl relative 
             before:absolute 
+            before:content-['']
             before:bg-amber-300 
             before:w-1/2
             before:h-1/2
             before:-top-5
             before:-left-5
-            before:content-['']
-            before:-z-30">
+            before:-z-30
+
+            after:absolute
+            after:content-['']
+            after:w-1/2
+            after:h-1/2
+            after:-bottom-5
+            after:-right-5
+            after:bg-amber-300
+            after:-z-10
+            "
+            >
                 <img src="../assets/table.png" alt="Table">
             </div>
     </div>
@@ -514,7 +523,7 @@ ease-in
     absolute
     -bottom-6
     -right-32
-    -z-10
+    -z-30
     aspect-square
     md:border-8
     border-amber-400
@@ -552,13 +561,98 @@ ease-in
     xl:absolute
     w-screen
     -bottom-8
-    -z-10
+    -z-30
     xl:mt-0
-    ">
-</div>
 
+    ">
+    </div>
 </section>
 </main>
+
+<!-- Let's Connect Section -->
+<section class="container px-8 overflow-hidden">
+    <div class="flex flex-wrap justify-center gap-12 md:gap-5 lg:gap-20">
+        <div class="md:flex-1 md:max-w-sm relative">
+            <img src="../assets/lamp.png" alt="Lamp" class="mx-auto">
+            <a href="#" class="
+py-2
+px-6
+bg-amber-400
+dark:text-neutral-900
+mx-auto
+mt-12
+w-max
+md:mb-12
+flex
+gap-2
+shadow-xl
+hover:shadow-none
+transition-all
+focus:outline-none
+focus-visible:ring-4
+ring-neutral-900
+rounded-md
+ring-offset-4
+ring-offset-white
+dark:ring-amber-400
+dark:ring-offset-neutral-800
+scale-100
+hover:scale-110
+duration-200
+ease-in
+">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
+
+    <span class="font-bold text-2xl">Start Now</span>
+      
+            </a>
+            <img src="../assets/app.svg" alt="App" width="240"
+            class="hidden md:block mb-12 drop-shadow-xl
+             left-1/2 -translate-x-1/2 absolute
+            max-w-16
+            xl:max-w-xs">
+
+            <div class="
+    
+    -bottom-18
+    left-1/2
+    -translate-x-1/2
+    -z-10
+    aspect-square
+    md:border-8
+    border-amber-400
+    rounded-full
+    md:w-72 
+    lg:w-96
+    ">
+            </div>
+
+        </div>
+
+        <form action="" class="
+        relative
+        border-8
+        border-neutral-900
+        p-6
+        rounded-lg
+        grid
+        gap-8
+        md:flex-1
+        md:max-w-lg
+        my-4
+        md:my-12
+        lg:my-16
+        bg-white
+        dark:bg-neutral-800
+        w-full 
+        "></form>
+    </div>
+</section>
 
  <!-- SCROLL TO TOP -->
  <a href="#" class="fixed bg-slate-200 rounded-3xl shadow-lg p-2 z-20 right-1 lg:right-5 hover:opacity transition-transform
