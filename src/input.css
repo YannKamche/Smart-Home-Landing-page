@@ -19,3 +19,6 @@
 .bg-header {
     @apply shadow-2xl;
 }
+.display-none {
+    @apply hidden;
+}
