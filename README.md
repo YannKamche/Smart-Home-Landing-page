@@ -1,4 +1,5 @@
 # Smart-Home-Landing-page
+# Preview: https://app-smart-home.netlify.app/
 ### Welcome to Home Smart, your go-to destination for all things related to smart living. Explore our curated collection of cutting-edge home automation solutions, innovative gadgets, and insightful guides to transform your living space into a smart and connected haven. Discover the future of convenience, energy efficiency, and security right at your fingertips with Home Smart.<br>
 ### Light Mode
 ![Screenshot (558)](https://github.com/YannKamche/Smart-Home-Landing-page/assets/122357201/ea1c5543-225b-48b0-ade9-8054d222288b)
